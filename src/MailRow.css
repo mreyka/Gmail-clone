@@ -1,0 +1,70 @@
+.mailRow {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  cursor: pointer;
+  z-index: 999;
+  /* font-size: 13px; */
+  /* margin-top: 5px; */
+}
+.mailRow__mailContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mailOptions .MuiSvgIcon-root {
+  color: rgb(211, 211, 211) !important;
+  font-size: 23px !important;
+}
+
+.mailRow:hover {
+  border-top: 1px solid rgb(231, 231, 231);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+}
+
+.mailRow__message {
+  display: flex;
+  flex: 0.4;
+  align-items: center;
+  font-size: 14px;
+}
+
+.mailRow__message > h4 {
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+
+.mailRow__title {
+  display: flex;
+  flex: 0.3;
+  align-items: center;
+  font-size: 14px;
+}
+.mailRow__description {
+  color: gray;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.mailRow__description::before {
+  content: "-";
+  margin-right: 10px;
+}
+.mailRow__time {
+  font-size: 14px;
+  display: flex;
+  flex: 0.2;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+  .mailRow__message {
+    flex: 0.1;
+  }
+}

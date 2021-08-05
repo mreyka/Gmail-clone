@@ -1,0 +1,33 @@
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 10px !important;
+  color: #fff !important;
+  background: rgb(24, 108, 218) !important;
+  border: none;
+  border-radius: 5px !important;
+
+  cursor: pointer;
+  width: 95.5% !important;
+  margin: 30px auto !important;
+}
+
+.btn:hover {
+  background: rgb(4, 83, 185) !important;
+}
+
+.login__container > img {
+  object-fit: contain;
+  height: 100px;
+}

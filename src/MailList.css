@@ -1,0 +1,61 @@
+.mailList {
+  flex: 1;
+
+  /* overflow: scroll; */
+  width: 100%;
+  position: sticky;
+  margin-top: 15px;
+}
+
+.mailList__settings {
+  display: flex;
+  position: sticky;
+  top: 60px;
+  left: 0;
+  right: 0;
+  margin-top: -20px;
+  justify-content: space-between;
+  z-index: 998;
+  padding: 5px 0;
+  background: #fff;
+  width: 100%;
+}
+.mailList__sections {
+  display: flex;
+  position: sticky;
+
+  top: 65px;
+  left: 0;
+  right: 0;
+  margin-top: -10px;
+  background: white;
+  width: 100%;
+
+  border-bottom: 1px solid lightgray;
+  background: #fff;
+  z-index: 998;
+}
+
+.mailList__list {
+  /* margin-top: 5px; */
+  padding-bottom: 20%;
+}
+
+@media screen and (max-width: 992px) {
+  .mailList {
+    /* overflow: hidden; */
+    flex: 0.5;
+  }
+
+  /* .mailList__sections {
+    width: 50%;
+  } */
+
+  .mailList__settings {
+    justify-content: flex-start;
+    transform: scale(0.8);
+  }
+
+  .mailList__sections {
+  }
+}
