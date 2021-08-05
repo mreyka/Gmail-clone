@@ -24,7 +24,7 @@ function MailRow({ id, title, subject, description, time }) {
 
   return (
     <div onClick={openMail} className="mailRow">
-      <div className="mailOptions">
+      <div className="mailRow__Options">
         <Checkbox/>
         <IconButton>
           <StarBorderOutlinedIcon/>

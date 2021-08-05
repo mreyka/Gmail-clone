@@ -1,26 +1,69 @@
 .sidebarOption {
-  display: flex;
+  /* display: flex;
   align-items: center;
   height: 40px;
-  /* position: sticky; */
-  /* top: 80px; */
   padding: 5px 10px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   cursor: pointer;
   color: gray;
-  /* flex: 0.4; */
-  /* margin-right: 5px; */
-  background: #fff;
-  /* background: lightgrey; */
-  /* width: fit-content; */
+  background: #fff; */
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+  color: #818181;
 }
 .sidebarOption > .MuiSvgIcon-root {
   font-size: 20px;
   margin-left: 10px;
 }
 
+.sidebarOption:hover,
+.sidebarOption:hover > p,
+.sidebarOption:hover > h3,
+.sidebarOption--active,
+.sidebarOption--active > p,
+.sidebarOption--active > h3 {
+  background-color: #fcecec;
+  color: #df2b0b;
+  font-weight: 750 !important;
+}
+
 .sidebarOption > h3 {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sidebarOption > p {
+  display: none;
+  font-weight: 300;
+}
+
+.sidebarOption--active > p {
+  display: inline !important;
+}
+
+s.sidebarOption--active:hover {
+  text-decoration: none;
+}
+
+.sidebarOption:hover > p {
+  display: inline;
+}
+
+@media only screen and (max-width: 500px) {
+  .sidebarOption > .MuiSvgIcon-root {
+    display: none;
+  }
+}
+
+/* .sidebarOption > h3 {
   flex: 1;
   margin-left: 10px;
   font-size: 14px;
@@ -58,4 +101,4 @@
 .sidebarOption:hover > p,
 .sidebarOption:hover > h3 {
   background: rgb(243, 243, 243);
-}
+} */

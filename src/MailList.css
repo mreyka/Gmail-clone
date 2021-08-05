@@ -1,14 +1,11 @@
 .mailList {
   flex: 1;
 
-  /* overflow: scroll; */
-  width: 100%;
-  position: sticky;
-  margin-top: 15px;
+  overflow: scroll;
 }
 
 .mailList__settings {
-  display: flex;
+  /* display: flex;
   position: sticky;
   top: 60px;
   left: 0;
@@ -18,10 +15,18 @@
   z-index: 998;
   padding: 5px 0;
   background: #fff;
-  width: 100%;
+  width: 100%; */
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+  background-color: white;
+  z-index: 999;
+  padding-right: 10px;
 }
 .mailList__sections {
-  display: flex;
+  /* display: flex;
   position: sticky;
 
   top: 65px;
@@ -33,29 +38,42 @@
 
   border-bottom: 1px solid lightgray;
   background: #fff;
-  z-index: 998;
+  z-index: 998; */
+  position: sticky;
+  top: 0;
+  display: flex;
+  border-bottom: 1px solid whitesmoke;
+  background-color: white;
+  z-index: 999;
 }
 
-.mailList__list {
-  /* margin-top: 5px; */
-  padding-bottom: 20%;
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.malList::-webkit-scrollbar {
+  display: none;
 }
 
-@media screen and (max-width: 992px) {
-  .mailList {
-    /* overflow: hidden; */
-    flex: 0.5;
+/* Hide scrollbar for IE, Edge and Firefox */
+.mailList {
+  scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+@media only screen and (max-width: 500px) {
+  .mailList__settingsLeft > .MuiIconButton-root {
+    padding-left: 3px;
+    padding-right: 3px;
   }
 
-  /* .mailList__sections {
-    width: 50%;
-  } */
-
-  .mailList__settings {
-    justify-content: flex-start;
-    transform: scale(0.8);
+  .mailList__settingsRight > .MuiIconButton-root {
+    padding-left: 3px;
+    padding-right: 3px;
   }
 
-  .mailList__sections {
+  .mailList__settingsLeft {
+    margin-left: 10px;
+  }
+
+  .emailList__settingsRight {
+    margin-right: 10px;
   }
 }

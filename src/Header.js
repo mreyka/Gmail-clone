@@ -6,6 +6,8 @@ import SearchIcon from '@material-ui/icons/Search';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import AppsIcon from '@material-ui/icons/Apps';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
+
 import { useDispatch, useSelector } from 'react-redux';
 import { logout, selectUser } from './features/userSlice';
 import { auth } from './firebase';
@@ -33,19 +35,22 @@ function Header() {
       </div>
 
       <div className="header__middle">
-        <SearchIcon className="b"/>
+        <SearchIcon />
         <input placeholder="Search mail" type="text" />
         <ArrowDropDownIcon className="header_inputCaret" />
       </div>
 
       <div className="header__right">
-        <IconButton className="a">
-          <AppsIcon />
+        <IconButton>
+          <HelpOutlineIcon />
         </IconButton>
-        <IconButton className="a">
+        <IconButton>
           <NotificationsIcon />
         </IconButton>
-        <Avatar onClick={signOut} src={user?.photoUrl} className="a"/>
+        <IconButton>
+          <AppsIcon />
+        </IconButton>
+        <Avatar onClick={signOut} src={user?.photoUrl}/>
       </div>
     </div>
   )
