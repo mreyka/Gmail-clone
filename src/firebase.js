@@ -1,8 +1,8 @@
 import firebase from 'firebase';
-// import {FIREBASE_API_KEY} from '@env';
+import {FIREBASE_API_KEY} from '@env';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyASwqy6EjiWtwoAkVduJ0krFQ_QF0CU-Fc',
+  apiKey: FIREBASE_API_KEY,
   authDomain: "clone-ef36c.firebaseapp.com",
   projectId: "clone-ef36c",
   storageBucket: "clone-ef36c.appspot.com",
